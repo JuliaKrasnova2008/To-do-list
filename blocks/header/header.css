@@ -1,0 +1,9 @@
+.header {
+    margin: 0 auto;
+    margin-bottom: 37px;
+    padding: 0;
+    padding-top: 45px;
+    max-width: 880px;
+    position: relative;
+    border-bottom: 2px solid #9C89B8;
+}

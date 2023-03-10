@@ -1,0 +1,17 @@
+.form__input {
+    margin: 0;
+    padding: 5px;
+    height: 30px;
+    width: 730px;
+    border: 1px solid #9c89b8;
+    border-radius: 8px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.form__input:hover {
+    cursor: pointer;
+    transition: all linear 0.6s;
+    background: rgb(255, 246, 189, 0.3);
+}

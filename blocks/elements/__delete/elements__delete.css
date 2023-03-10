@@ -1,0 +1,12 @@
+.elements__delete {
+    margin: 0;
+    padding: 5px 15px;
+    border: none;
+    background-color: inherit;
+}
+
+.elements__delete:hover {
+    cursor: pointer;
+    transition: all linear 0.3s;
+    text-shadow: 1px 1px 1px #000000a3;
+    }

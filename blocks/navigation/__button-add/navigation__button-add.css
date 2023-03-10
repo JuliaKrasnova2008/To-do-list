@@ -1,0 +1,22 @@
+.navigation__button-add {
+    background: #9c89b8;
+    border-radius: 8px;
+    border: none;
+    color: white;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    padding: 5px 25px 5px 25px;
+    margin: 0;
+}
+
+.navigation__button-add:hover {
+cursor: pointer;
+transition: all linear 0.3s;
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.navigation__button-add:active {
+    opacity: 0.6;
+    }
+    

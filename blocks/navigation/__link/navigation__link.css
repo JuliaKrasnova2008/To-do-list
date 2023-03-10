@@ -1,0 +1,19 @@
+.navigation__link {
+    text-decoration: none;
+    color: black;
+    margin: 0;
+    padding: 8px;
+    border: 1px solid #9c89b8;
+    border-radius: 8px;
+}
+
+.navigation__link:hover {
+    cursor: pointer;
+    transition: all linear 0.3s;
+    background: rgb(156, 137, 184, 0.3);
+}
+
+.navigation__link:active {
+    border: 3px solid #9c89b8;
+}
+

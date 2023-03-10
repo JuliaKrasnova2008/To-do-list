@@ -1,0 +1,5 @@
+.navigation__link_current{
+    background: rgb(156, 137, 184, 0.5);
+    color: white;
+    text-shadow: 1px 1px 2px #9c89b8;
+}

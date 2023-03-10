@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Список дел</title>
+    <link rel="stylesheet" href="./pages/index.css" />
+  </head>
+
+  <body>
+    <div class="page">
+      <!--HEADER-->
+      <header class="header">
+        <nav class="navigation">
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a class="navigation__link navigation__link_current">Понедельник</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link">Вторник</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link">Среда</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link">Четверг</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link">Пятница</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link navigation__link_wekeend">Суббота</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link navigation__link_wekeend">Воскресенье</a>
+            </li>
+          </ul>
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <button class="navigation__button-add">Добавить</button>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <!--MAIN-->
+      <main class="content">
+        <div class="content__square-pic rotation"></div>
+        <!-- Добавить дело -->
+        <section class="todo">
+          <h1 class="todo__title">Мои дела</h1>
+          <form
+            class="form form__add-todo"
+            id="formAdd"
+            name="addForm"
+            method="POST"
+            novalidate
+          >
+            <input
+              class="form__input"
+              id="inputForm"
+              name="titleForm"
+              type="text"
+              placeholder="Введите дело"
+              autocomplete="off"
+              minlength=""
+              maxlength=""
+              required
+            />
+            <button class="form__submit" type="submit" aria-label="Добавить">
+              <svg
+                viewBox="0 0 24 24"
+                fill="white"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M23 11H13V1C13 0.734784 12.8946 0.48043 12.7071 0.292893C12.5196 0.105357 12.2652 0 12 0V0C11.7348 0 11.4804 0.105357 11.2929 0.292893C11.1054 0.48043 11 0.734784 11 1V11H1C0.734784 11 0.48043 11.1054 0.292893 11.2929C0.105357 11.4804 0 11.7348 0 12H0C0 12.2652 0.105357 12.5196 0.292893 12.7071C0.48043 12.8946 0.734784 13 1 13H11V23C11 23.2652 11.1054 23.5196 11.2929 23.7071C11.4804 23.8946 11.7348 24 12 24C12.2652 24 12.5196 23.8946 12.7071 23.7071C12.8946 23.5196 13 23.2652 13 23V13H23C23.2652 13 23.5196 12.8946 23.7071 12.7071C23.8946 12.5196 24 12.2652 24 12C24 11.7348 23.8946 11.4804 23.7071 11.2929C23.5196 11.1054 23.2652 11 23 11Z"
+                  fill="#9C89B8"
+                />
+              </svg>
+            </button>
+          </form>
+        </section>
+
+        <!-- Список дел -->
+        <section class="elements">
+          <ul class="elements__cards"></ul>
+        </section>
+      </main>
+
+      <!--FOOTER-->
+      <footer class="footer">
+        <div class="items">
+          <div class="items__all">
+            <p class="items__subtitle">Запланированно:</p>
+            <span class="items__num">0</span>
+          </div>
+          <div class="items__done">
+            <p class="items__subtitle">Сделано:</p>
+            <span class="items__num-done">0</span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
